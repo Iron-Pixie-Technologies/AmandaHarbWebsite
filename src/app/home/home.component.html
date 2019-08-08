@@ -1,0 +1,35 @@
+<div id="upperdivone"></div>
+<ul id="mainmenu">
+    <li><button class="normalbutton" (click)='ScrollToElement("page1")'>Home</button></li>
+    <li><button class="normalbutton" (click)='ScrollToElement("page2")'>about me</button></li>
+    <li><button class="normalbutton" (click)='ScrollToElement("page3")'>services</button></li>
+    <li><button class="normalbutton" (click)='ScrollToElement("page4")'>qualifications</button></li>
+    <li><button class="normalbutton" (click)='ScrollToElement("page5")'>accomplishments</button></li>
+    <li><button class="normalbutton" (click)='ScrollToElement("contact")'>contact</button></li>
+</ul>
+<div id="dropdown">
+
+    <button id="dropbutton" (click)="dropit()" mat-button><mat-icon id="menuicon">menu</mat-icon></button>
+    <div  *ngIf="bar">
+    <ul id="dropmenu">
+        <li><button class="normalbutton" (click)='ScrollToElement("page1")' (click)="dropit()">Home</button></li>
+        <li><button class="normalbutton" (click)='ScrollToElement("page2")' (click)="dropit()">about me</button></li>
+        <li><button class="normalbutton" (click)='ScrollToElement("page3")' (click)="dropit()">services</button></li>
+        <li><button class="normalbutton" (click)='ScrollToElement("page4")' (click)="dropit()">qualifications</button></li>
+        <li><button class="normalbutton" (click)='ScrollToElement("page5")' (click)="dropit()">accomplishments</button></li>
+        <li><button class="normalbutton" (click)='ScrollToElement("contact")' (click)="dropit()">contact</button></li>
+    </ul></div>
+
+</div>
+
+
+
+
+<div id="page1" class="container"><div class="name">Amanda Lilah Harb</div><div class="textcontent">Attorney At Law</div></div>
+
+
+<div id="page2" class="container"><div class="name">Amanda Lilah Harb</div><div class="textcontent">I'm a lawyer who does lawyer things for lawyer people and non lawyer people and this is just place holder content to test the websites ability to handle large ammounts of text This text is text text is text and I have text here</div></div>
+<div id="page3" class="container"><div class="name">Amanda Lilah Harb</div></div>
+<div id="page4" class="container"><div class="name">Amanda Lilah Harb</div></div>
+<div id="page5" class="container"><div class="name">Amanda Lilah Harb</div></div>
+<div id="contact"><div class="container"><div class="name">FakeEmail@gmail.com <br><br> FakePhone: (123) 456-7890 </div></div></div>
